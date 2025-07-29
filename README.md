@@ -31,3 +31,26 @@ The challenge is to run this in production mode.
 |make the README easy to use and ACCURATE|2|
 |||
 |total|10|
+
+
+
+
+# CAO Assignment 3 – Gitea Deployment
+
+## 🌐 My ngrok link:
+https://your-ngrok-subdomain.ngrok-free.app
+
+---
+
+## 🚀 How I Completed This Assignment
+
+### 1. Install MySQL for Gitea:
+```bash
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo update
+
+helm install gitea-mysql bitnami/mysql \
+  --set auth.rootPassword=supersecretpassword \
+  --set auth.database=giteadb \
+  --set auth.username=giteauser \
+  --set auth.password=giteapass

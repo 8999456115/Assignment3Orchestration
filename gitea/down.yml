@@ -7,3 +7,5 @@
       release_namespace: default
       state: absent
       wait: true
+
+      ngrok http 3000

@@ -107,7 +107,7 @@ Create and test your Gitea repository.
 
 ### 7. Expose Publicly via ngrok
 
-> ⚠️ Do NOT include ngrok in `up.yaml`. Always run it separately.
+> ⚠️ Do NOT include ngrok in `up.yml`. Always run it separately.
 
 ```bash
 ngrok config add-authtoken <your_authtoken>
